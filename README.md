@@ -1,0 +1,1 @@
+build the UI of Amazon from scratch, create REST APIs, store data in MongoDB using Mongoose, use REST APIs with Flutter & Dart using Models, use the Flutter State Management tool as a provider, and create a cross platform app that works on Android and iOS.
