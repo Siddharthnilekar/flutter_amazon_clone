@@ -7,7 +7,7 @@ class CustomButton extends StatelessWidget {
   const CustomButton({super.key, required this.text, required this.onTap});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)  {
     return ElevatedButton(
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
