@@ -1,16 +1,18 @@
-console.log("helllo, world!");
-
+//IMPORT FROM PACKAGES
 const express = require("express");
-const PORT = 3000;
 
+//IMPORT FROM OTHER FILES
+const authRouter = require('./routes/auth');
+
+//INIT
+const PORT = 3000;
 const app = express();
 
-//CREATING AN API
-app.get("/hello-word", (req, res) => {
-  res.json({hi: "hello world!"});
-});
-// GET, PUT, DELETE, UPDATE => CRUD
+//middleware
+app.use(authRouter);
 
-app.listen(PORT, "0.0.0.0", () => {
+
+
+app.listen(PORT,  () => {
   console.log(`connexted at port ${PORT}`);
 });
